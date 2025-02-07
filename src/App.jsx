@@ -7,6 +7,9 @@ import logo from "./assets/img2.jpg";
 import img2 from "./assets/react.svg";
 import Conditional from "./components/Conditional";
 import Button from "./components/Button";
+import Events from "./components/Events";
+import StateOne from "./components/Hooks/Usestate/StateOne";
+import Forms from "./components/Hooks/Usestate/Forms";
 function App() {
   return (
     <section className="">
@@ -48,6 +51,9 @@ function App() {
       <Button text="Get in touch" styles="bg-red-600 !p-4 text-white" />
       <Button text="send" styles="bg-black !p-4 text-white" />
       <Button text="send" styles="bg-black !p-4 text-white" />
+      <Events />
+      <StateOne />
+      <Forms />
     </section>
     // <>
     //   <h1>hello </h1>
