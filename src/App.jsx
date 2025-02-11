@@ -10,6 +10,8 @@ import Button from "./components/Button";
 import Events from "./components/Events";
 import StateOne from "./components/Hooks/Usestate/StateOne";
 import Forms from "./components/Hooks/Usestate/Forms";
+import StateTwo from "./components/Hooks/Usestate/StateTwo";
+import StateThree from "./components/Hooks/Usestate/StateThree";
 function App() {
   return (
     <section className="">
@@ -23,8 +25,8 @@ function App() {
       <Home />
       <Expressions />
       <Lists />
-      {/* <Props text="hello world" />
-      <Props text="Bye bye world" /> */}
+      <Props text="hello world" />
+      <Props text="Bye bye world" />
       <div className="flex gap-10 px-16">
         <KodexCards
           heading="Kodex Academy"
@@ -54,6 +56,9 @@ function App() {
       <Events />
       <StateOne />
       <Forms />
+
+      <StateTwo />
+      <StateThree />
     </section>
     // <>
     //   <h1>hello </h1>
