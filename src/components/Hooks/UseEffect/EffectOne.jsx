@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 const EffectOne = () => {
   const [counter, setCounter] = useState(0);
   //   When you a parent has a state , the usual behaviour is that once the state is updated , the children components are going to be rendered
+  //   url for your api call =https://www.jsonplaceholder.org/
   return (
     // Parent component
     <div className="!px-20">
