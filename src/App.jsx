@@ -12,6 +12,8 @@ import StateOne from "./components/Hooks/Usestate/StateOne";
 import Forms from "./components/Hooks/Usestate/Forms";
 import StateTwo from "./components/Hooks/Usestate/StateTwo";
 import StateThree from "./components/Hooks/Usestate/StateThree";
+import StateFour from "./components/Hooks/Usestate/StateFour";
+import EffectOne from "./components/Hooks/UseEffect/EffectOne";
 function App() {
   return (
     <section className="">
@@ -59,6 +61,8 @@ function App() {
 
       <StateTwo />
       <StateThree />
+      <StateFour />
+      <EffectOne />
     </section>
     // <>
     //   <h1>hello </h1>
