@@ -14,55 +14,63 @@ import StateTwo from "./components/Hooks/Usestate/StateTwo";
 import StateThree from "./components/Hooks/Usestate/StateThree";
 import StateFour from "./components/Hooks/Usestate/StateFour";
 import EffectOne from "./components/Hooks/UseEffect/EffectOne";
+import EffectTwo from "./components/Hooks/UseEffect/EffectTwo";
+import MyChild from "./components/Hooks/UseContext/context/MyChild";
+import UserContextProvider from "./components/Hooks/UseContext/context/UserContextProvider";
 function App() {
   return (
     <section className="">
-      <h1>hello world </h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in
-        impedit sed totam vero dicta eligendi tempora incidunt, cumque quasi.
-      </p>
-      {/* <label htmlFor=""></label> */}
-      <Home></Home>
-      <Home />
-      <Expressions />
-      <Lists />
-      <Props text="hello world" />
-      <Props text="Bye bye world" />
-      <div className="flex gap-10 px-16">
-        <KodexCards
-          heading="Kodex Academy"
-          para="Kodex Academy Provides an Extensive selection of courses covering full-stack web development, mobile app development, UI/UX design, and data analysis."
-          btnText="Learn More"
-          img={img2}
-        />
-        <KodexCards
-          heading="Kodex Build"
-          para="Kodex Build operates as a complete development studio, delivering cutting-edge product development services to both corporate clients and individuals."
-          btnText="Download"
-          img={logo}
-        />
-        <KodexCards
-          heading="Kodex Build"
-          para="Kodex Build operates as a complete development studio, delivering cutting-edge product development services to both corporate clients and individuals."
-          btnText="Download"
-          img={logo}
-        />
-      </div>
-      <div className="flex justify-center items-center  h-40">
-        <Conditional />
-      </div>
-      <Button text="Get in touch" styles="bg-red-600 !p-4 text-white" />
-      <Button text="send" styles="bg-black !p-4 text-white" />
-      <Button text="send" styles="bg-black !p-4 text-white" />
-      <Events />
-      <StateOne />
-      <Forms />
+      <UserContextProvider>
+        <h1>hello world </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in
+          impedit sed totam vero dicta eligendi tempora incidunt, cumque quasi.
+        </p>
+        {/* <label htmlFor=""></label> */}
+        <Home></Home>
+        <Home />
+        <Expressions />
+        <Lists />
+        <Props text="hello world" />
+        <Props text="Bye bye world" />
+        <div className="flex gap-10 px-16">
+          <KodexCards
+            heading="Kodex Academy"
+            para="Kodex Academy Provides an Extensive selection of courses covering full-stack web development, mobile app development, UI/UX design, and data analysis."
+            btnText="Learn More"
+            img={img2}
+          />
+          <KodexCards
+            heading="Kodex Build"
+            para="Kodex Build operates as a complete development studio, delivering cutting-edge product development services to both corporate clients and individuals."
+            btnText="Download"
+            img={logo}
+          />
+          <KodexCards
+            heading="Kodex Build"
+            para="Kodex Build operates as a complete development studio, delivering cutting-edge product development services to both corporate clients and individuals."
+            btnText="Download"
+            img={logo}
+          />
+        </div>
+        <div className="flex justify-center items-center  h-40">
+          <Conditional />
+        </div>
+        <Button text="Get in touch" styles="bg-red-600 !p-4 text-white" />
+        <Button text="send" styles="bg-black !p-4 text-white" />
+        <Button text="send" styles="bg-black !p-4 text-white" />
+        <Events />
+        <StateOne />
+        <Forms />
 
-      <StateTwo />
-      <StateThree />
-      <StateFour />
-      <EffectOne />
+        <StateTwo />
+
+        <StateThree />
+        <StateFour />
+        <EffectOne />
+        <EffectTwo />
+        <MyChild>OUR CHILDREN</MyChild>
+      </UserContextProvider>
     </section>
     // <>
     //   <h1>hello </h1>
