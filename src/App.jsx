@@ -16,11 +16,15 @@ import StateFour from "./components/Hooks/Usestate/StateFour";
 import EffectOne from "./components/Hooks/UseEffect/EffectOne";
 import EffectTwo from "./components/Hooks/UseEffect/EffectTwo";
 import MyChild from "./components/Hooks/UseContext/context/MyChild";
-import UserContextProvider from "./components/Hooks/UseContext/context/UserContextProvider";
+
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import MyContex from "./components/Hooks/UseContext/context/myContex";
+import UserefOne from "./components/Hooks/Use ref/UserefOne";
 function App() {
   return (
     <section className="">
-      <UserContextProvider>
+      <MyContex>
         <h1>hello world </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore in
@@ -70,7 +74,10 @@ function App() {
         <EffectOne />
         <EffectTwo />
         <MyChild>OUR CHILDREN</MyChild>
-      </UserContextProvider>
+        <Login />
+        <Profile />
+        <UserefOne />
+      </MyContex>
     </section>
     // <>
     //   <h1>hello </h1>
